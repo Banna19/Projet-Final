@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Contacts</title>
+    <link rel="icon" href="images/image1.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "auyJPRNXFmAdwbmi9",
+      });
+   })();
+</script>
+</head>
+<body>
+    <h4><a href="index.html">Retour à l'accueil</a></h4>
+    <section id="contacts">
+        <h1>Contactez-moi</h1>
+        <div class="contact-info">
+            <h2>Mes Coordonnées</h2>
+            <p>Email : <a href="mailto:djibabanna54@gmail.com">djibabanna54@gmail.com</a></p>
+            <p>Téléphone : <a href="tel:+221774047642">+221 77 404 76 42</a></p>
+            <p>Adresse : Dakar, Sénégal</p>
+        </div>
+        <div class="contact-form">
+            <h2>Envoyez-moi un message</h2>
+            <form id="messageForm">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Numéro de téléphone :</label>
+                <input type="tel" id="phone" required placeholder="Ex: +221 77 000 00 00">
+
+                <label for="message">Message :</label>
+                <textarea id="message" required placeholder="Décrivez ce que vous souhaitez avec les reférences ou faîtes-moi un retour d'expérience."></textarea></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1129029770/photo/black-brick-wall-texture-of-dark-brickwork-close-up.webp?a=1&b=1&s=612x612&w=0&k=20&c=QU4MMBFI2kogWyEXhacJxwmVA3frpdsuFp96IhoNC98=);
+    margin: 0;
+    padding: 2px;
+}
+.logo {
+     height: 5%;
+     width: 5%;
+}
+
+.nom {
+    color: yellow;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 10px;
+    margin: auto;
+    height: 50px;
+}
+
+.logo {
+    color: white;
+    font-size: 10px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: yellow; /* Couleur au survol */
+}
+
+.hero {
+    background-image: url('https://media.istockphoto.com/id/1496715791/photo/minimalistic-mosaic-shape-marron-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=VlI74qmDqUnvs8YwVMiyFjNrtd6nmBNqEjXFmQqhK-Q=');
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #f04628; /* Couleur du bouton */
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4500; /* Couleur au survol */
+}
+
+.right-image {
+    max-width: 700px; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+}
+.qui-suis-je {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2%; /* Bordure noire de 2 pixels */
+    background-color: yellow; /* Fond gris clair */
+    margin: 90px;
+}
+
+.photo {
+    width: 500px; /* Ajuste la taille selon tes besoins */
+    height: auto;
+    border-radius: 75px; /* Rendre l'image ronde */
+    margin-right: 20px;
+}
+
+.description {
+    max-width: 600px; /* Limite la largeur du texte */
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.souhaits {
+    background-color: #ece907;
+    padding: 50px;
+    border-radius: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Limite la largeur du conteneur */
+    margin: auto; /* Centrer le conteneur */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Centre le titre */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacement entre les boutons */
+}
+
+.button {
+    text-decoration: none;
+    padding: 15px;
+    background-color: #0a19ec; /* Couleur de fond des boutons */
+    color: white; /* Couleur du texte */
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ee8d0f; /* Couleur au survol */
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h3 {
+    margin: 10px 0 5px 0;
+}
+
+p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: yellow;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.voir-plus {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.voir-plus:hover {
+    background-color: yellow;
+}
+
+footer {
+    text-align: center;
+    padding: 2px;
+    background-color: yellow;
+    color: black;
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    margin-top: 25px;
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recherche de Chaussures</title>
+    <link rel="icon" href="images/image1.png" type="image/png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://davidshimjs.github.io/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+    <h4><a href="index.html">Retour à l'accueil</a></h4>
+    <header>
+        <h1>Acheter des chaussures</h1>
+        <p>Parcourez nos superbes chaussures de marque avec des prix imbattables ! <br> 
+            Faîtes des cadeaux à vos proches en leur offrant des sneakers personnalisés. Vous avez la possibilité de choisir une paire et de demander à ce qu'on change les couleurs à votre gôut. <br>
+            Vous pouvez aller à l'onglet "Customiser mes chaussures" pour voir les modèles diponibles.
+            Nous avons des chaussures New balance, des air force 1, des adidas, des crampons personnalisables,etc. Toutes les paires en tendance sont disponibles chez-nous.
+        </p>
+        <h3>Chaque photo a une reférence (exemple:AD1) et à chaque fois que vous cliquerez sur "Ajouter au panier", vous verrez tout en bas de la page, votre sélection avec le prix total et le bouton "Payer". Vous pourrez supprimer des articles quand vous le souhaitez.</h3>
+        <h3>Les tailles disponibles: 37 à 45</h3>
+    </header>
+    <main class="shoes-gallery">
+        <h2>Marque: Adidas</h2>
+        <div class="shoes-container">
+            <div class="shoe-card">
+                <img src="imagesadidas/image1.JPG" alt="Chaussure 1">
+                <h3>AD1</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('AD1', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesadidas/image2.JPG" alt="Chaussure 2">
+                <h3>AD2</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('AD2', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesadidas/image3.JPG" alt="Chaussure 3">
+                <h3>AD3</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('AD3', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesadidas/image4.JPG" alt="Chaussure 4">
+                <h3>AD4</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('AD4', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesadidas/image5.JPG" alt="Chaussure 5">
+                <h3>AD5</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('AD5', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesadidas/image6.JPG" alt="Chaussure 6">
+                <h3>AD6</h3>
+                <p>Prix: 18000 frs</p>
+                <button onclick="addToCart('AD6', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesadidas/image7.JPG" alt="Chaussure 7">
+                <h3>AD7</h3>
+                <p>Prix: 16000 frs</p>
+                <button onclick="addToCart('AD7', 16000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesadidas/image8.JPG" alt="Chaussure 8">
+                <h3>AD8</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('AD8', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesadidas/image9.JPG" alt="Chaussure 9">
+                <h3>AD9</h3>
+                <p>Prix: 17000 frs</p>
+                <button onclick="addToCart('AD9', 17000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesadidas/image10.JPG" alt="Chaussure 10">
+                <h3>AD10</h3>
+                <p>Prix: 18000 frs</p>
+                <button onclick="addToCart('AD10', 18000)">Ajouter au Panier</button>
+            </div>
+        </div>
+
+        
+        <h2>Marque: Nike, Jordan</h2>
+        <div class="shoes-container">
+            <div class="shoe-card">
+                <img src="imagesnike/nike2.JPG" alt="Chaussure 1">
+                <h3>NJ1</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ1', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike3.JPG" alt="Chaussure 2">
+                <h3>NJ2</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ2', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike4.JPG" alt="Chaussure 3">
+                <h3>NJ3</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ3', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike5.JPG" alt="Chaussure 4">
+                <h3>NJ4</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ4', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike6.JPG" alt="Chaussure 5">
+                <h3>NJ5</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ5', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike7.JPG" alt="Chaussure 6">
+                <h3>NJ6</h3>
+                <p>Prix: 18000 frs</p>
+                <button onclick="addToCart('NJ6', 18000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike8.JPG" alt="Chaussure 7">
+                <h3>NJ7</h3>
+                <p>Prix: 16000 frs</p>
+                <button onclick="addToCart('NJ7', 16000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike9.JPG" alt="Chaussure 8">
+                <h3>NJ8</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ8', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike10.JPG" alt="Chaussure 9">
+                <h3>NJ9</h3>
+                <p>Prix: 17000 frs</p>
+                <button onclick="addToCart('NJ9', 17000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike1.JPG" alt="Chaussure 10">
+                <h3>NJ10</h3>
+                <p>Prix: 18000 frs</p>
+                <button onclick="addToCart('NJ10', 18000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike11.JPG" alt="Chaussure 11">
+                <h3>NJ11</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ11', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike12.JPG" alt="Chaussure 12">
+                <h3>NJ12</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ12', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike13.JPG" alt="Chaussure 13">
+                <h3>NJ13</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ13', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike14.JPG" alt="Chaussure 14">
+                <h3>NJ14</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ14', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnike/nike15.JPG" alt="Chaussure 15">
+                <h3>NJ15</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NJ15', 15000)">Ajouter au Panier</button>
+            </div>
+            
+        </div>
+
+        <h2>Marque: New Balance</h2>
+        <div class="shoes-container">
+            <div class="shoe-card">
+                <img src="imagesnb/nb10.JPG" alt="Chaussure 1">
+                <h3>NB1</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NB1', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/nb5.JPG" alt="Chaussure 2">
+                <h3>NB2</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NB2', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/nb6.JPG" alt="Chaussure 3">
+                <h3>NB3</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NB3', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/nb7.JPG" alt="Chaussure 4">
+                <h3>NB4</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NB4', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/nb8.JPG" alt="Chaussure 5">
+                <h3>NB5</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NB5', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/nb9.JPG" alt="Chaussure 6">
+                <h3>NB6</h3>
+                <p>Prix: 18000 frs</p>
+                <button onclick="addToCart('NB6', 18000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/nb1.JPG" alt="Chaussure 7">
+                <h3>NB7</h3>
+                <p>Prix: 16000 frs</p>
+                <button onclick="addToCart('NB7', 16000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/nb4.JPG" alt="Chaussure 8">
+                <h3>NB8</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('NB8', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/nb3.JPG" alt="Chaussure 9">
+                <h3>NB9</h3>
+                <p>Prix: 17000 frs</p>
+                <button onclick="addToCart('NB9', 17000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/nb2.JPG" alt="Chaussure 10">
+                <h3>NB10</h3>
+                <p>Prix: 18000 frs</p>
+                <button onclick="addToCart('NB10', 18000)">Ajouter au Panier</button>
+            </div>
+        </div>
+
+        <h2>Marque: Air force</h2>
+        <div class="shoes-container">
+            
+           
+            <div class="shoe-card">
+                <img src="imagesairforce/image0 (3).jpeg" alt="Chaussure 1">
+                <h3>AF1</h3>
+                <p>Prix: 10000 frs</p>
+                <button onclick="addToCart('AF1', 10000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesairforce/image1.jpeg" alt="Chaussure 2">
+                <h3>AF2</h3>
+                <p>Prix: 10000 frs</p>
+                <button onclick="addToCart('AF2', 10000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesairforce/image3.jpeg" alt="Chaussure 3">
+                <h3>AF3</h3>
+                <p>Prix: 10000 frs</p>
+                <button onclick="addToCart('AF3', 10000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesairforce/image2.jpeg" alt="Chaussure 4">
+                <h3>AF4</h3>
+                <p>Prix: 10000 frs</p>
+                <button onclick="addToCart('AF4', 10000)">Ajouter au Panier</button>
+            </div>
+        </div>
+
+        <h2>Crampons personnalisables</h2>
+        <div class="shoes-container">
+            <div class="shoe-card">
+                <img src="imagesnb/cramp.JPG" alt="Chaussure 1">
+                <h3>CR1</h3>
+                <p>Prix: 22000 frs</p>
+                <button onclick="addToCart('CR1', 12000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/cramp (3).JPG" alt="Chaussure 2">
+                <h3>CR2</h3>
+                <p>Prix: 22000 frs</p>
+                <button onclick="addToCart('CR2', 12000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/cramp (4).JPG" alt="Chaussure 3">
+                <h3>CR3</h3>
+                <p>Prix: 22000 frs</p>
+                <button onclick="addToCart('CR3', 12000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/cramp (5).JPG" alt="Chaussure 4">
+                <h3>CR4</h3>
+                <p>Prix: 22000 frs</p>
+                <button onclick="addToCart('CR4', 12000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/cramp (7).JPG" alt="Chaussure 5">
+                <h3>CR5</h3>
+                <p>Prix: 22000 frs</p>
+                <button onclick="addToCart('CR5', 12000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="imagesnb/cramp (6).JPG" alt="Chaussure 6">
+                <h3>CR6</h3>
+                <p>Prix: 22000 frs</p>
+                <button onclick="addToCart('CR6', 12000)">Ajouter au Panier</button>
+            </div>
+        </div>
+
+        <h2>Autres Marques</h2>
+        <div class="shoes-container">
+            <div class="shoe-card">
+                <img src="images/autre.JPG" alt="Chaussure 1">
+                <h3>MR1</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('MR1', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="images/autre2.JPG" alt="Chaussure 2">
+                <h3>MR2</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('MR2', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="images/autre3.JPG" alt="Chaussure 3">
+                <h3>MR3</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('MR3', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="images/autre4.JPG" alt="Chaussure 4">
+                <h3>MR4</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('MR4', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="images/autre5.JPG" alt="Chaussure 5">
+                <h3>MR5</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('MR5', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="images/autre6.JPG" alt="Chaussure 6">
+                <h3>MR6</h3>
+                <p>Prix: 18000 frs</p>
+                <button onclick="addToCart('MR6', 18000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="images/autre7.JPG" alt="Chaussure 7">
+                <h3>MR7</h3>
+                <p>Prix: 16000 frs</p>
+                <button onclick="addToCart('MR7', 16000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="images/autre8.JPG" alt="Chaussure 8">
+                <h3>MR8</h3>
+                <p>Prix: 15000 frs</p>
+                <button onclick="addToCart('MR8', 15000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="images/autre9.JPG" alt="Chaussure 9">
+                <h3>MR9</h3>
+                <p>Prix: 17000 frs</p>
+                <button onclick="addToCart('MR9', 17000)">Ajouter au Panier</button>
+            </div>
+            <div class="shoe-card">
+                <img src="images/autre10.JPG" alt="Chaussure 10">
+                <h3>MR10</h3>
+                <p>Prix: 18000 frs</p>
+                <button onclick="addToCart('MR10', 18000)">Ajouter au Panier</button>
+            </div>
+        </div>
+
+        <div id="products"></div>
+          <div id="cart">
+             <h2>Mon Panier</h2>
+             <ul id="cart-items"></ul>
+             <button onclick="pay()">Payer</button>
+          </div>
+
+          <div id="qr-code">
+            <h3>Scannez le QR Code pour payer</h3>
+            <div id="qrcode"></div>
+            <button onclick="closeQRCode()">Fermer</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
